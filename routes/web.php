@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Postcontroller::class, 'index']);
-
+Route::get('/posts/{post}', [Postcontroller::class ,'show']);
